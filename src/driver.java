@@ -52,7 +52,7 @@ public class driver {
         }
 
         System.out.println("\nSolutions found: " + solutionsFound);
-        if (solutionsFound != 0) { return true; }
+        return solutionsFound != 0;
 
     }
 
