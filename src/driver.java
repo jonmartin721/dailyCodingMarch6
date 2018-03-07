@@ -9,11 +9,14 @@ public class driver {
 //        Given an array of numbers, return whether any two sums to K.
 //        For example, given [10, 15, 3, 7] and K of 17, return true since 10 + 7 is 17.
 
+        Scanner keyboard = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
         Random rand = new Random();
+        System.out.println("How large should the array be? ");
+        int arraySize = keyboard.nextInt();
         System.out.println("Creating random array:");
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < arraySize; i++) {
             int randInt;
             randInt = (rand.nextInt((10 - 1) + 1) + 1);
             list.add(i, randInt);
@@ -21,7 +24,6 @@ public class driver {
         }
 
         int k;
-        Scanner keyboard = new Scanner(System.in);
         System.out.println("\n\nK? ");
         k = keyboard.nextInt();
 
