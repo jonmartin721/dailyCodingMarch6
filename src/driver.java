@@ -37,8 +37,7 @@ public class driver {
         int solutionsFound = 0;
         //starting out, make the leftIndex 0
         for (int leftIndex = 0; leftIndex < list.size(); leftIndex++) {
-
-            //make the rightIndex 0
+            
             for (int rightIndex = leftIndex + 1; rightIndex < list.size(); rightIndex++) {
 
                 if ((list.get(leftIndex) + list.get(rightIndex)) == k) {
